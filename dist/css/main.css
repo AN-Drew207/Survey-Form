@@ -1,0 +1,139 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+  font-family: monospace;
+  color: #125bf3;
+  -webkit-text-stroke: 0.1px black;
+  background: #5aef31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input::-webkit-input-placeholder, input, select, textarea::-webkit-input-placeholder, textarea {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 15px;
+  color: blue;
+}
+
+input:-ms-input-placeholder, input, select, textarea:-ms-input-placeholder, textarea {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 15px;
+  color: blue;
+}
+
+input::-ms-input-placeholder, input, select, textarea::-ms-input-placeholder, textarea {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 15px;
+  color: blue;
+}
+
+input::placeholder, input, select, textarea::placeholder, textarea {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 15px;
+  color: blue;
+}
+
+header {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 35px;
+}
+
+header p {
+  font-size: 15px;
+}
+
+.form {
+  height: auto;
+  background: rgba(0, 191, 255, 0.5);
+  border: 4px solid #000;
+}
+
+.group-form {
+  font-size: 1.5em;
+  margin: 8px 5px;
+  padding: 8px 5px;
+}
+
+.group-form label {
+  padding: 0.5em 0px;
+}
+
+.group-form > .label-checkbox, .group-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+select {
+  padding: auto;
+  font-size: 1em;
+  width: 100%;
+  padding: 8px 7px;
+  background: #fff;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 15px;
+  color: blue;
+}
+
+input[type='text'], input[type='email'], input[type='number'], textarea {
+  display: block;
+  font-size: 1em;
+  padding: 10px 7px;
+  width: 100%;
+}
+
+.submit {
+  width: 100%;
+  height: 40px;
+  background: #00bfff;
+  border: none;
+}
+
+.submit:active {
+  background: #5aef31;
+}
+
+@media (min-width: 800px) {
+  .form {
+    width: 750px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    width: 90vw;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

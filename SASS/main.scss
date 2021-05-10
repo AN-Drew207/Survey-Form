@@ -1,0 +1,112 @@
+@import 'config';
+
+@mixin flexCenter {
+    display: flex;              //mixin para establecer flex los contenedores y labels
+    text-align: center;         
+}
+@mixin textForm {
+    font-family: inherit;       //mixin para el estilo de letra utilizado
+    font-weight: 100;
+    font-size: 15px;
+    color: blue;
+}
+
+#container {
+    font-family: monospace;
+    color: $terciary-color;
+    -webkit-text-stroke: 0.1px black;
+    background: $primary-color;
+    @include flexCenter;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input::placeholder, input, select, textarea::placeholder, textarea{
+    @include textForm;
+}
+
+header{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+.form{
+    height: auto;
+    background: rgba($secondary-color, 0.5);
+    border: 4px solid #000;
+}
+
+.group-form{
+    font-size: 1.5em;
+    margin: 8px 5px;
+    padding: 8px 5px;
+}
+
+.group-form{
+    label{
+        padding: 0.5em 0px;
+    }
+}
+
+
+.group-form > .label-checkbox,.group-form label{
+    @include flexCenter;
+    width: 100%;
+}
+
+select{
+    padding: auto;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px 7px;
+    background: #fff;
+    @include textForm;
+}
+
+
+input[type='text'] , input[type='email'], input[type='number'], textarea {
+    display: block;
+    font-size: 1em;
+    padding: 10px 7px;
+    width: 100%;   
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    background: $secondary-color;
+    border: none;
+    &:active{
+        background: $primary-color;
+    }
+}
+
+
+
+@media(min-width:800px){
+    .form{
+        width: 750px;
+        margin: 20px;
+        padding: 20px;
+        text-align: left;
+    }
+
+}
+
+@media(max-width:800px) {
+    .form{
+        width: 90vw;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+    }
+}
+

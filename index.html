@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css" type="text/css">
+    <title>Survey Form</title>
+</head>
+<body id="container">
+    <header>
+        <h1 id="title">AN-Drew Survey Form</h1>
+        <p id="description">Give me your opinion about my channel</p>
+    </header>
+    <div class="form">
+        <form action="" id="survey-form">
+            <div class="group-form"> 
+                <label for="Name" id="name-label">Name</label>
+                <input type="text" name="name" id="" placeholder="Enter your name">
+            </div> 
+            <div class="group-form"> 
+                <label for="Email" id="email-label">Email</label>
+                <input type="email" name="name" id="" placeholder="Enter your email">   
+            </div>
+            <div class="group-form"> 
+                <label for="Age (optional)" id="number-label">Age</label>
+                <input type="number" name="name" value="1" placeholder="Enter your age" min="1" max="150">
+            </div>
+            <div class="group-form"> 
+                <p>What kind of music would you like me to do?</p> 
+                <select name="" id="dropdown" placeholder="Select an option">
+                    <option value="Rap">Rap</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Romantic">Romantic</option>
+                </select>
+            </div>
+            <div class="group-form"> 
+            <p>How often do you prefer me upload a video?</p> 
+                <label for=""><input type="radio" name="radio">Dayly</label>
+                <label for=""><input type="radio" name="radio">Weekly</label>
+                <label for=""><input type="radio" name="radio">Monthly</label>
+                <label for=""><input type="radio" name="radio">Other</label>
+            </div>
+            <div class="group-form">
+                <p>What kind of videos do you want that I upload?</p>
+                <label for="" class="label-checkbox"><input type="checkbox" name="" id="">Gameplays</label>
+                <label for="" class="label-checkbox"><input type="checkbox" name="" id="">Raps</label>
+                <label for="" class="label-checkbox"><input type="checkbox" name="" id="">Tops</label>    
+                <label for="" class="label-checkbox"><input type="checkbox" name="" id="">Video reactions</label>
+                
+            </div>
+            <div class="group-form">
+                <p>Any comments or suggestions?</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="submit">
+            
+
+        </form>
+    </div>
+    
+</body>
+</html>
